@@ -1,0 +1,118 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.mobile {
+  display: none;
+}
+
+body {
+  background-color: #f2ebe4;
+}
+
+.main_div {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.conten {
+  display: flex;
+  background-color: white;
+  color: black;
+  width: 300px;
+  padding: 20px;
+  flex-direction: column;
+  gap: 20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.perfume .des {
+  height: 100%;
+  width: 300px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.title {
+  color: grey;
+}
+.prgraph {
+  padding-top: 20px;
+}
+.money {
+  color: green;
+
+  font-size: 25px;
+}
+.shop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(158, 36%, 37%);
+  align-items: center;
+  border: 0px;
+  color: hsl(0, 0%, 100%);
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 6px;
+  transition: opacity 300ms ease-in-out;
+}
+
+.shop:hover {
+  opacity: 0.75;
+}
+
+.ds {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.sm {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+.cart_img {
+  width: 20px;
+  height: 30px;
+  padding-right: 10px;
+}
+
+/* only mobile */
+@media (max-width: 600px) {
+  .main_div {
+    flex-direction: column;
+  }
+
+  .des {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    width: 100%;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  .conten {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0px;
+    width: 100%;
+    padding-bottom: 18px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+  }
+
+  .title {
+    margin: 15px;
+  }
+  .prgraph,
+  h1,
+  .ds,
+  .shop {
+    margin: 0 15px;
+  }
+}
